@@ -18,7 +18,7 @@ console.log('userNumber: ', userNumber);
 
 //generare un numero random da 1 a 5 
 if(userNumber <= 5 && 
-    userNumber > 0 &&
+    userNumber > 0 && // ti mancava il && per far si che funzionava 
     evenOdd === 'even' || evenOdd === 'odd' ){
 
         function isRandomNumber(){
