@@ -30,20 +30,27 @@ for(let j = word.length - 1; j >= 0 ; j--){
 }
 console.log(arrayRowReverse);
 
-function isPalindrome(word){
+function isPalindrome(word1, word2){
     //osso
     //anna
     //non
     //radar
     //oronarono
+    let result = false;
 
-    if(arrayRow === arrayRowReverse){
-        console.log('the word is palindrome');
-        return true;
-    } else{
-        console.log('the word is not palindrome');
-        return false;
+    //controllo se le parole sono palindrome 
+    for(let h = 0; h < word1.length; h++){
+        if(word1[h] === word2[h]){
+            console.log('palindrome word')
+            result = true
+        }else{
+            console.log('not palindrome word')
+            result = false 
+        }
     }
+    
+    return result;
+    
 }
-const wordLenght = isPalindrome(word);
+const wordLenght = isPalindrome(arrayRow, arrayRowReverse);
 console.log(wordLenght);
