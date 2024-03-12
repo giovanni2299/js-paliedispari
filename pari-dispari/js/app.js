@@ -18,25 +18,28 @@ console.log('userNumber: ', userNumber);
 
 //generare un numero random da 1 a 5 
 
-const addNumber = 1;
 
 function isRandomNumber(){
-    const randomNumbers = parseInt(Math.floor(Math.random() * 5));
+    const randomNumbers = parseInt(Math.floor(Math.random() * 5) + 1);
     return randomNumbers;
 
 }
-console.log('RandomNumber: ', random())
+const random = isRandomNumber()
+console.log('RandomNumber: ', random)
 
-const sum = userNumber + random();
-
-console.log('sum ', sum);
+const sum = userNumber + random;
+console.log('som of the number: ', sum);
 
 function isEvenOdd(){
-    if(sum % 2 === 0){
-        console.log('il numero è pari')
-        return true;
-    }else {
-        console.log('il numero è dispari ')
-        return false
-    }
+    const rest = sum % 2
+    return rest 
+}
+
+
+if(isEvenOdd() === 0 && evenOdd === 'pari'){
+    console.log('you win the number is even');
+} else if (isEvenOdd() !== 0 && evenOdd === 'odd'){
+    console.log('you win the number is odd')
+}else {
+    console.log('you lose! ')
 }
