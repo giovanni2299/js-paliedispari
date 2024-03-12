@@ -7,3 +7,10 @@
 // deve ritornare false se la parola non è palindroma
 // alla fine stampate in console un messaggio per dire all’utente il risultato del controllo
 
+const word = prompt('choose your word')
+
+// console.log(word)
+
+function ispalindrome(word){
+    
+}
