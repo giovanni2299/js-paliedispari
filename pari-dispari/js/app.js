@@ -32,6 +32,8 @@ if(userNumber <= 5 &&
         const sum = userNumber + random;
         console.log('som of the number: ', sum);
         
+
+        //la function è sempre seguita da parentesi vuote o meno 
         function isEvenOdd(){
             const rest = sum % 2
             return rest 
