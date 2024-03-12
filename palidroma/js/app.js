@@ -7,7 +7,7 @@
 // deve ritornare false se la parola non è palindroma
 // alla fine stampate in console un messaggio per dire all’utente il risultato del controllo
 
-const word = prompt('choose your word');
+const word = prompt('choose your word'); //string
 
 // console.log(word);
 
@@ -41,14 +41,14 @@ function isPalindrome(word1, word2){
     //controllo se le parole sono palindrome 
     for(let h = 0; h < word1.length; h++){
         if(word1[h] === word2[h]){
-            console.log('palindrome word')
+            console.log('palindrome word') //boolean value
             result = true
         }else{
-            console.log('not palindrome word')
+            console.log('not palindrome word') //boolean value
             result = false 
         }
     }
-    
+
     return result;
     
 }
