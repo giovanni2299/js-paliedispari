@@ -17,29 +17,35 @@ const userNumber = parseInt(prompt('insert a number from 1 to 5'))
 console.log('userNumber: ', userNumber);
 
 //generare un numero random da 1 a 5 
+if(userNumber <= 5 && 
+    userNumber > 0 &&
+    evenOdd === 'even' || evenOdd === 'odd' ){
 
+        function isRandomNumber(){
+            const randomNumbers = parseInt(Math.floor(Math.random() * 5) + 1);
+            return randomNumbers;
+        
+        }
+        const random = isRandomNumber()
+        console.log('RandomNumber: ', random)
+        
+        const sum = userNumber + random;
+        console.log('som of the number: ', sum);
+        
+        function isEvenOdd(){
+            const rest = sum % 2
+            return rest 
+        }
+        
+        
+        if(isEvenOdd() === 0 && evenOdd === 'even'){
+            console.log('you win the number is even');
+        } else if (isEvenOdd() !== 0 && evenOdd === 'odd'){
+            console.log('you win the number is odd')
+        }else {
+            console.log('you lose! ')
+        }
 
-function isRandomNumber(){
-    const randomNumbers = parseInt(Math.floor(Math.random() * 5) + 1);
-    return randomNumbers;
-
-}
-const random = isRandomNumber()
-console.log('RandomNumber: ', random)
-
-const sum = userNumber + random;
-console.log('som of the number: ', sum);
-
-function isEvenOdd(){
-    const rest = sum % 2
-    return rest 
-}
-
-
-if(isEvenOdd() === 0 && evenOdd === 'pari'){
-    console.log('you win the number is even');
-} else if (isEvenOdd() !== 0 && evenOdd === 'odd'){
-    console.log('you win the number is odd')
-}else {
-    console.log('you lose! ')
-}
+    }else{
+        alert('error')
+    }
