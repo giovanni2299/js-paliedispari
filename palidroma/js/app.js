@@ -41,14 +41,18 @@ function isPalindrome(word1, word2){
     //controllo se le parole sono palindrome 
     for(let h = 0; h < word1.length; h++){
         if(word1[h] === word2[h]){
-            console.log('palindrome word') //boolean value
             result = true
         }else{
-            console.log('not palindrome word') //boolean value
-            result = false 
+            result = false
         }
     }
 
+    if(result === true){
+        console.log('palindrome word') //boolean value
+    }else{
+        console.log('not palindrome word') //boolean value
+    }
+    
     return result;
     
 }
